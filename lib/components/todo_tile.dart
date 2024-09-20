@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_users_manager/models/user.dart';
-import 'package:flutter_users_manager/provider/users.dart';
+import 'package:flutter_users_manager/models/todo.dart';
+import 'package:flutter_users_manager/provider/todo_list.dart';
 import 'package:provider/provider.dart';
 
-class UserTile extends StatelessWidget{
-  final User user;
+class TodoTile extends StatelessWidget{
+  final Todo todo;
 
-  const UserTile(this.user);
+  const TodoTile(this.todo);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(user.name),
-      subtitle: Text(user.email),
+      title: Text(todo.titulo),
+      subtitle: Text(todo.description),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -22,7 +22,7 @@ class UserTile extends StatelessWidget{
             onPressed: (){
               Navigator.of(context).pushNamed(
                 '/user-form',
-                arguments: user,
+                arguments: todo,
               );
             },
           ),
@@ -30,7 +30,7 @@ class UserTile extends StatelessWidget{
             icon: const Icon(Icons.delete),
             color: Colors.red,
             onPressed: (){
-              Provider.of<Users>(context, listen: false).remove(user);
+              Provider.of<Todolist>(context, listen: false).remove(todo);
             },
           ),
         ],

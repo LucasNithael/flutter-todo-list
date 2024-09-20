@@ -1,22 +1,24 @@
-import 'package:flutter_users_manager/models/user.dart';
+import 'package:flutter_users_manager/models/todo.dart';
 
 final DUMMY_USERS = {
-  '1': User(
+  '1': Todo(
     id: '1',
-    name: 'Maria',
-    email: 'maria@email.com',
-    phone: '4002-8922',
+    titulo: 'Limpar casa',
+    description: 'Limpar a casa inteira',
   ),
-  '2': User(
+  '2': Todo(
     id: '2',
-    name: 'João',
-    email: 'joao@email.com',
-    phone: '99152-5865',
+    titulo: 'Lavar roupa',
+    description: 'Lavar toda a roupa suja',
   ),
-  '3': User(
+  '3': Todo(
     id: '3',
-    name: 'Ana',
-    email: 'ana@email.com',
-    phone: '99152-1122',
+    titulo: 'Fazer compras',
+    description: 'Comprar comida e bebida',
+  ),
+  '4': Todo(
+    id: '4',
+    titulo: 'Estudar',
+    description: 'Estudar para a prova de matemática',
   ),
 };

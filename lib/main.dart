@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_users_manager/provider/users.dart';
+import 'package:flutter_users_manager/provider/todo_list.dart';
 import 'package:flutter_users_manager/routes/app_routes.dart';
-import 'package:flutter_users_manager/views/user_form.dart';
-import 'package:flutter_users_manager/views/user_list.dart';
+import 'package:flutter_users_manager/views/todo_form.dart';
+import 'package:flutter_users_manager/views/todo_list.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  ChangeNotifierProvider(
-      create: (ctx) => Users(),
+      create: (ctx) => Todolist(),
     child: MaterialApp(
       debugShowCheckedModeBanner: false, // Adicione esta linha para remover a faixa de depuração
-      home: UserList(),
+      home: TodoList(),
       routes: {
         //AppRoutes.HOME: (_) => UserList(),
-        AppRoutes.USER_FORM: (_) => UserForm(),
+        AppRoutes.USER_FORM: (_) => TodoForm(),
       },
     ));
   }
