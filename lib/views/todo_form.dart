@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_users_manager/models/todo.dart';
-import 'package:flutter_users_manager/provider/todo_list.dart';
+import 'package:flutter_todolist_manager/models/todo.dart';
+import 'package:flutter_todolist_manager/provider/todo_list.dart';
 import 'package:provider/provider.dart';
 
 class TodoForm extends StatelessWidget {

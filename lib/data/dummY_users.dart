@@ -1,6 +1,6 @@
-import 'package:flutter_users_manager/models/todo.dart';
+import 'package:flutter_todolist_manager/models/todo.dart';
 
-final DUMMY_USERS = {
+final DUMMY_todolist = {
   '1': Todo(
     id: '1',
     titulo: 'Limpar casa',

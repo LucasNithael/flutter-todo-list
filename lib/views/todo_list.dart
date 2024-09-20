@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_users_manager/components/todo_tile.dart';
-import 'package:flutter_users_manager/data/dummY_users.dart';
-import 'package:flutter_users_manager/models/todo.dart';
-import 'package:flutter_users_manager/provider/todo_list.dart';
+import 'package:flutter_todolist_manager/components/todo_tile.dart';
+import 'package:flutter_todolist_manager/data/dummY_todolist.dart';
+import 'package:flutter_todolist_manager/models/todo.dart';
+import 'package:flutter_todolist_manager/provider/todo_list.dart';
 import 'package:provider/provider.dart';
 
 class TodoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final Todolist users = Provider.of(context);
+    final Todolist todolist = Provider.of(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -25,8 +25,8 @@ class TodoList extends StatelessWidget {
         ],
       ),
       body:  ListView.builder(
-        itemCount: users.count,
-        itemBuilder: (ctx, i) => TodoTile(users.byIndex(i)),
+        itemCount: todolist.count,
+        itemBuilder: (ctx, i) => TodoTile(todolist.byIndex(i)),
       ),
     );
 }}

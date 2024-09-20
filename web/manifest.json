@@ -1,6 +1,6 @@
 {
-    "name": "flutter_users_manager",
-    "short_name": "flutter_users_manager",
+    "name": "flutter_todolist_manager",
+    "short_name": "flutter_todolist_manager",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

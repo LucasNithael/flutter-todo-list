@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_users_manager/data/dummY_users.dart';
-import 'package:flutter_users_manager/models/todo.dart';
+import 'package:flutter_todolist_manager/data/dummY_users.dart';
+import 'package:flutter_todolist_manager/models/todo.dart';
 
 class Todolist with ChangeNotifier{
-  Map<String, Todo> _items = {...DUMMY_USERS};
+  Map<String, Todo> _items = {...DUMMY_todolist};
 
   List<Todo> get all{
     return [..._items.values];

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_users_manager/provider/todo_list.dart';
-import 'package:flutter_users_manager/routes/app_routes.dart';
-import 'package:flutter_users_manager/views/todo_form.dart';
-import 'package:flutter_users_manager/views/todo_list.dart';
+import 'package:flutter_todolist_manager/provider/todo_list.dart';
+import 'package:flutter_todolist_manager/routes/app_routes.dart';
+import 'package:flutter_todolist_manager/views/todo_form.dart';
+import 'package:flutter_todolist_manager/views/todo_list.dart';
 import 'package:provider/provider.dart';
 
 void main() {
